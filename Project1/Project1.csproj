@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8F7E781-E620-4C85-A753-AA998E7FA4C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Project1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addmin.Designer.cs">
+      <DependentUpon>addmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checking.Designer.cs">
+      <DependentUpon>Checking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="history.Designer.cs">
+      <DependentUpon>history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newbooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newbooking.Designer.cs">
+      <DependentUpon>newbooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reciept.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reciept.Designer.cs">
+      <DependentUpon>reciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ค่าบริการ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ค่าบริการ.Designer.cs">
+      <DependentUpon>ค่าบริการ.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addmin.resx">
+      <DependentUpon>addmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checking.resx">
+      <DependentUpon>Checking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="history.resx">
+      <DependentUpon>history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newbooking.resx">
+      <DependentUpon>newbooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reciept.resx">
+      <DependentUpon>reciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ค่าบริการ.resx">
+      <DependentUpon>ค่าบริการ.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PW02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_1660.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สนามแบด1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021-09-27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photo-30-3-2563-BE-09-16-40-edit-1140x680_c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovepik-badminton-court-png-image_401134580_wh1200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เอกชัย02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2021-09-271.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\079fc1f3c071d6ef3e38774bebf2eed0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4a331c1398d3d7a67ecba739d2e8bb43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovepik-badminton-court-png-image_401134580_wh12001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4f67c784ab9414a18c3b4d04c55d942f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdd0c93907322080f9ba821a2d41cc0b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c683d47061daa12bec9ff7c70e7ad80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %282%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TK BAdminton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TK BAdminton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TK BAdminton %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TK BAdminton %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286857986_822430978738863_7802589169449395595_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\286857986_822430978738863_7802589169449395595_n %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3efd6fb1fa7962cd04d887008cf8fbb2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TK BADMINTON %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สนามแบด11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1600-w800_extra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สนาม.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\พื้นหลังสนาม1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียน1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียน2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\โลโก้.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ตีแบด.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ตีแบด3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียนสนาม.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เลือก.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ปกเลือก.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียน4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียน5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียน6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียน7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลงทะเบียนสนาม 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\จอง.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\จอง.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\จอง3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\booking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checking page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ปก.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tk badminton %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\อัตาค่าบริการ TK Badmin ton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tk badminton %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\อัตาค่าบริการ TK Badmin ton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tk badmin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tk badmin2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booking1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booking1 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booking1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Booking1 %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botton %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %282%293.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbooking %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ปก1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ปก %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\from2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ปก.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ปก %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbk %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbk %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newbk %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\court.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regis %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
